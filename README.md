@@ -1,2 +1,8 @@
-# Calculo
-Esse repositório irá conter um estudo detalhado de calculo, o objetivo é aprimorar os meus conhecimentos para compreender melhor os algoritmos de ML e DL
+# Calculo 🧮
+
+## Descrição do Repositório 📝
+
+Este repositório terá como objetivo armazenar estudos diversos sobre cálculo. O conteúdo será organizado em pastas, sendo cada uma delas referente a um assunto específico.
+
+A ideia é aprimorar os conhecimentos da matemática por trás dos algortimos de Machine Learning e Deep Learning.
+
