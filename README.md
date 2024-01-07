@@ -6,3 +6,6 @@ Este repositório terá como objetivo armazenar estudos diversos sobre cálculo.
 
 A ideia é aprimorar os conhecimentos da matemática por trás dos algortimos de Machine Learning e Deep Learning.
 
+## Conteúdo 📚
+
+- [Limites]
