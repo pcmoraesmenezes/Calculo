@@ -87,7 +87,7 @@ $|(2x-1) -3| < \epsilon$
 
 $|2x-4| < \epsilon$
 
-$ 2|x-2| < \epsilon$
+$2|x-2| < \epsilon$
 
 $|x-2| < \frac{\epsilon}{2}$
 
