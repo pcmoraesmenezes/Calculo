@@ -102,3 +102,6 @@ $0 < x-2 < 0,01$
 $2 < x < 2,01$
 
 $\delta = 0,01$
+
+
+### Retomando a definição formal de limite 🪄
