@@ -45,6 +45,7 @@
         - [Exemplo 📐](#exemplo-f09f9390-5)
     - [Assintotas inclinadas 🪂](#assintota-inclinada-🪂)
         - [Exemplo 📚](#exemplo-📚)
+- [Exercícios 📝](#exercícios-📝)
 ## Introdução 📚
 
 O conceito de limite de uma função $f$ é uma das ideias fundamentais do cálculo. Ele é tratado de forma intuitiva, ou seja supondo que $f(x)$ tende a um certo numero $L$ quando $x$ tende a um certo numero $a$. Quanto mais próximo de $a$ for $x$, mais próximo de $L$ será $f(x)$.
