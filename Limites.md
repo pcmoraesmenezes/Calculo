@@ -1,5 +1,50 @@
 # Limite 🔣
 
+## Tabela de conteúdos 📚
+
+- [Introdução 📚](#introdução-📚)
+    - [Notação 📝](#notação-📝)
+    - [Exemplo 📐](#exemplo-📐)
+        - [Como calcular o limite? 🤔](#como-calcular-o-limite-🤔)
+        - [Outros exemplos 📐](#outros-exemplos-📐)
+        - [Exemplo 📐](#exemplo-f09f9390-1)
+            - [Aplicação ✨](#aplicação-✨)
+            - [Retomando a definição formal de limite 🪄](#retomando-a-definição-formal-de-limite-🪄)
+            - [Unicidade do limite 📐](#unicidade-do-limite-📐)
+                - [Prova 📝](#prova-📝)
+- [Limites laterais 📐](#limites-laterais-📐)
+    - [A esquerda ⬅️](#a-esquerda-⬅️)
+    - [A direita ➡️](#a-direita-➡️)
+    - [Exemplo 📐](#exemplo-f09f9390-2)
+    - [Existência do limite 📐](#existência-do-limite-📐)
+    - [Exemplo 📐](#exemplo-f09f9390-3)
+- [Função contínua 🛹](#função-contínua-🛹)
+    - [Definição 📝](#definição-📝)
+    - [Exemplo 🛞](#exemplo-f09f9390-3)
+    - [Propriedades 📝](#propriedades-📝)
+        - [Consequências das propriedades 🧲](#consequências-das-propriedades-🧲)
+- [Limite e Continuidade de funções trigonométricas 📐](#limite-e-continuidade-de-funções-trigonométricas-📐)
+- [Propriedade operatória dos limites 📐](#propriedade-operatória-dos-limites-📐)
+    - [Exemplos 🧲](#exemplos-🧲)
+    - [Casos em que as propriedades operatórias dos limites não podem ser aplicadas 🔦](#casos-em-que-as-propriedades-operatórias-dos-limites-não-podem-ser-aplicadas-🔦)
+- [Limites que envolvem infinito ♾️](#limites-que-envolvem-infinito-♾️)
+    - [Pela direita ➡️](#pela-direita-➡️)
+    - [Pela esquerda ⬅️](#pela-esquerda-⬅️)
+    - [Propriedades 📝](#propriedades-📝)
+- [Teorema do confronto 🤼](#teorema-do-confronto-🤼)
+- [Limites fundamentais ✅](#limites-fundamentais-✅)
+    - [Limite fundamental trigonométrico ⭕](#limite-fundamental-trigonométrico-⭕)
+        - [Exemplos ✈️](#exemplos-✈️)
+    - [Limite fundamental da Função Potência Exponencial 📈](#limite-fundamental-da-função-potência-exponencial-📈)
+        - [Exemplos ✈️](#exemplos-✈️-1)
+    - [Consequências do limite fundamental da Função Potência Exponencial 📈](#consequências-do-limite-fundamental-da-função-potência-exponencial-📈)
+        - [Exemplos ✈️](#exemplos-✈️-2)
+- [Assintotas 🪂](#assíntotas-📐)
+    - [Assintotas horizontais 🪂](#assíntota-horizontal-🪂)
+    - [Assintotas verticais 🪂](#assíntota-vertical-🪂)
+        - [Exemplo 📐](#exemplo-f09f9390-5)
+    - [Assintotas inclinadas 🪂](#assintota-inclinada-🪂)
+        - [Exemplo 📚](#exemplo-📚)
 ## Introdução 📚
 
 O conceito de limite de uma função $f$ é uma das ideias fundamentais do cálculo. Ele é tratado de forma intuitiva, ou seja supondo que $f(x)$ tende a um certo numero $L$ quando $x$ tende a um certo numero $a$. Quanto mais próximo de $a$ for $x$, mais próximo de $L$ será $f(x)$.
@@ -534,7 +579,7 @@ A reta $y = mx + b$ é assintota inclinada de $y = f(x)$ se uma das condições 
 
 Para ser assintota inclinada o grau da diferença entre o maior polinômio do numerador e o maior polinômio do denominador deve ser igual a $1$.
 
-#### Exemplo 📐
+#### Exemplo 📚
 
 Verificar se y = 3x é assintota
 
