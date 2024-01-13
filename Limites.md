@@ -348,3 +348,206 @@ Logo se $lim_{x\to a} f(x) = +\infty$, $f(x)$ pode ser arbitrariamente grande.
 2. $lim_{x\to +\infty} (\frac{1}{x})^{p}$ = 
 
 $lim_{x\to +\infty} \frac{1}{x^{p}}$ = $0$, se $p > 0$
+
+3. $lim_{x\to a} P(x) = lim_{x\to +\infty} a_{m}x^{m}$ e $lim_{x\to +\infty} a_{n}x^{n}$ =
+
+$+\infty$, se $m > n$
+
+$0$, se $m < n$
+
+$\frac{a_{m}}{a_{n}}$, se $m = n$
+
+## Teorema do confronto 🤼
+
+Seja $I$ um intervalo aberto, onde existe $f$, $g$ e $h$ definidas em $I$ exceto, possivelmente, em $a$ e $lim_{x\to a} f(x) = lim_{x\to a} h(x) = l$ e $f(x) \leq g(x) \leq h(x)$, para todo $x \in I$, então $lim_{x\to a} g(x) = l$
+
+Usando a definição formal de limite, tem-se:
+
+$lim_{x\to a} f(x) = l$ e $lim_{x\to a} h(x) = l$, então:
+
+$\forall \epsilon > 0, \exists \delta_{1} > 0$ tal que se $0 < |x - a| < \delta_{1}$, então $|f(x) - l| < \epsilon$
+
+$\forall \epsilon > 0, \exists \delta_{2} > 0$ tal que se $0 < |x - a| < \delta_{2}$, então $|h(x) - l| < \epsilon$
+
+Escolhendo $\delta = min(\delta_{1}, \delta_{2})$, tem-se:
+
+$0 < |x - a| < \delta$, então $|f(x) - l| < \epsilon$ e $|h(x) - l| < \epsilon$
+
+Como $f(x) \leq g(x) \leq h(x)$, então $|f(x) - l| \leq |g(x) - l| \leq |h(x) - l|$
+
+Logo $|g(x) - l| < \epsilon$
+
+O teorema do confronto é utilizado para calcular limites que não podem ser calculados diretamente. Esses limites dão origem aos limites fundamentais.
+
+## Limites fundamentais ✅
+
+### Limite fundamental trigonométrico ⭕
+
+$lim_{x\to 0} \frac{sen(x)}{x} = 1$
+
+Mas por que $lim_{x\to 0} \frac{sen(x)}{x} = 1$? 🤔
+
+![Gráfico da função f(x) = sen(x)/x](/images/5.png)
+
+Seja o arco $AOP$, $x in ]0; \frac{\pi}{2}[$, então:
+
+$sen(x) < x < tg(x)$
+
+$tg(x) = \frac{sen(x)}{cos(x)}$
+
+Como $sen(x) > 0$ então é possível aplicar uma multiplicação em função de $sen(x)$, ou seja:
+
+$\frac{sen(x)}{sen(x)} > \frac{sen(x)}{x} > \frac{sen(x)}{tg(x)}$
+
+$1 > \frac{sen(x)}{x} > cos(x)$
+
+Aplicando limite em ambos os lados da desigualdade, tem-se:
+
+$lim_{x\to 0} 1 = 1$ > $lim_{x\to 0} \frac{sen(x)}{x}$ > $lim_{x\to 0} cos(x) = 1$
+
+Logo $lim_{x\to 0} \frac{sen(x)}{x} = 1$
+
+#### Exemplos ✈️
+
+1. $lim_{x\to 0} \frac{sen(3x)}{x}$
+
+$lim_{x\to 0} \frac{sen(3x)}{x} = 3 \cdot lim_{x\to 0} \frac{sen(3x)}{3x} = 3 \cdot 1 = 3$
+
+2. $lim_{x\to 0} \frac{sen(2x)}{5x}$
+
+$lim_{x\to 0} \frac{sen(2x)}{5x} = \frac{1}{5} \cdot lim_{x\to 0} \frac{sen(2x)}{2x}$
+
+$\frac{1}{5} \cdot lim_{x\to 0} \frac{2\cdot sen(2x)}{2\cdot x}$
+
+$\frac{1}{5} \cdot 2 \cdot lim_{x\to 0} \frac{sen(2x)}{2x}$
+
+$\frac{2}{5} \cdot 1 = \frac{2}{5}$
+
+### Limite fundamental da Função Potência Exponencial 📈
+
+$lim_{x\to \infty} (1 + \frac{1}{x})^{x} = e$
+
+Prova:
+
+Considere $x$ = $\frac{1}{t}$, então $t$ = $\frac{1}{x}$
+
+Sendo que $x->$ $o^{+}$, então $t$ = $\frac{1}{x}->$ $+\infty$
+
+e $x->$ $0^{-}$, então $t$ = $\frac{1}{x}->$ $-\infty$
+
+$lim_{x\to \infty} (1 + \frac{1}{x})^{x} = lim_{t\to 0^{+}} (1 + t)^{\frac{1}{t}} = e$
+
+$lim_{x\to -\infty} (1 + \frac{1}{x})^{x} = lim_{t\to 0^{-}} (1 + t)^{\frac{1}{t}} = e$
+
+
+#### Exemplos ✈️
+
+1. $lim_{x\to \infty} (1 + \frac{1}{x})^{2x}$
+
+$lim_{x\to \infty} (1 + \frac{1}{x})^{2x} = lim_{x\to \infty} ((1 + \frac{1}{x})^{x})^{2} = e^{2}$
+
+2. $lim_{x\to \infty} (1 + \frac{1}{x})^{3x}$
+
+$lim_{x\to \infty} (1 + \frac{1}{x})^{3x} = lim_{x\to \infty} ((1 + \frac{1}{x})^{x})^{3} = e^{3}$
+
+3. $lim_{x\to \infty} (1 + \frac{5}{x})^{x}$
+
+$lim_{x\to \infty} (1 + \frac{5}{x})^{x} = lim_{x\to \infty} ((1 + \frac{5}{x})^{\frac{x}{5}})^{5} = e^{5}$
+
+### Consequências do limite fundamental da Função Potência Exponencial 📈
+
+$lim_{x\to 0} \frac {a^{x} - 1}{x} = ln(a)$, se $a > 0$
+
+Prova:
+
+$a$ = 1 => $lim_{x\to 0} \frac {1^{x} - 1}{x} = lim_{x\to 0} \frac {0}{x} = 0$ = $ln(1)$
+
+Se $0 < a != 1$, então $t = a^{x} - 1$ e $x = \frac{ln(1 + t)}{ln(a)}$
+
+$lim_{x\to 0} \frac {a^{x} - 1}{x} = lim_{t\to 0} \frac {t}{\frac{ln(1 + t)}{ln(a)}} = lim_{t\to 0} \frac {t \cdot ln(a)}{ln(1 + t)} = ln(a) \cdot lim_{t\to 0} \frac {t}{ln(1 + t)} = ln(a)$
+
+#### Exemplos ✈️
+
+1. $lim_{x\to 0} \frac {2^{x} - 1}{x}$
+
+$lim_{x\to 0} \frac {2^{x} - 1}{x} = ln(2)$
+
+2. $lim_{x\to 0} \frac {2^{x+2} - 1}{x}$
+
+$lim_{x\to 0} \frac {2^{x+2} - 1}{x} = lim_{x\to 0} \frac {2^{x} \cdot 2^{2} - 1}{x} = \frac{4}{3} \cdot ln(2)$
+
+## Assíntotas 📐
+
+### Assíntota horizontal 🪂
+
+A reta $y = b$ é assíntota horizontal de $y = f(x)$ se uma das condições for satisfeita:
+
+1. $lim_{x\to +\infty} f(x) = b$
+
+2. $lim_{x\to -\infty} f(x) = b$
+
+Ou seja é necessário que a função retorne um valor escalar constante.
+
+### Assíntota vertical 🪂
+
+A reta $x = a$ é assintota vertical de $y = f(x)$ se uma das condições for satisfeita:
+
+1. $lim_{x\to a^{-}} f(x) = +\infty$ 
+
+2.  $lim_{x\to a^{+}} f(x) = -\infty$
+
+3. $lim_{x\to a^{-}} f(x) = -\infty$
+
+4. $lim_{x\to a^{+}} f(x) = +\infty$
+
+#### Exemplo 📐
+
+$f(x) = \frac{3x-2}{x-2}$
+
+Colocando o x em evidência no numerador e no denominador, tem-se:
+
+$f(x) = \frac{x(3-\frac{2}{x})}{x(1-\frac{2}{x})}$
+
+É possível simplificar os termos em evidência, pois $x \neq 0$:
+
+$f(x) = \frac{3-\frac{2}{x}}{1-\frac{2}{x}}$
+
+$f(x) = 3$
+
+$lim_{x\to +\infty} f(x) = 3$
+
+$lim_{x\to -\infty} f(x) = 3$
+
+Para verificar se é assintota vertical
+
+$lim_{x\to 2^{-}} f(x) = lim_{x\to 2^{-}} \frac{3-\frac{2}{x}}{1-\frac{2}{x}} = -\infty$
+
+$lim_{x\to 2^{+}} f(x) = lim_{x\to 2^{+}} \frac{3-\frac{2}{x}}{1-\frac{2}{x}} = +\infty$
+
+### Assintota Inclinada 🪂
+
+A reta $y = mx + b$ é assintota inclinada de $y = f(x)$ se uma das condições for satisfeita:
+
+1. $lim_{x\to +\infty} (f(x) - (mx + b)) = 0$
+
+2. $lim_{x\to -\infty} (f(x) - (mx + b)) = 0$
+
+Para ser assintota inclinada o grau da diferença entre o maior polinômio do numerador e o maior polinômio do denominador deve ser igual a $1$.
+
+#### Exemplo 📐
+
+Verificar se y = 3x é assintota
+
+$f(x) = \frac{3x^{3} +4x}{x^{2} + 4}$
+
+$lim_{x\to +\infty} (f(x) - (mx + b)) = 0$
+
+$lim_{x\to +\infty} (\frac{3x^{3} +4x}{x^{2} + 4} - (mx + b)) = 0$
+
+$lim_{x\to +\infty} (\frac{3x^{3} +4x}{x^{2} + 4} - (3x)) = 0$
+
+$lim_{x\to +\infty} (\frac{3x^{3} +4x}{x^{2} + 4} - \frac{3x^{3} + 12}{x^{2} + 4}) = 0$
+
+$lim_{x\to +\infty} \frac{3x{3} + 4x - 3x \dot(x^{2} + 4)}{x^{2} + 4}$
+
+$lim_{x\to +\infty} \frac{-8x}{x^{2} + 4} = 0$
