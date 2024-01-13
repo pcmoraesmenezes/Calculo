@@ -596,3 +596,191 @@ $lim_{x\to +\infty} (\frac{3x^{3} +4x}{x^{2} + 4} - \frac{3x^{3} + 12}{x^{2} + 4
 $lim_{x\to +\infty} \frac{3x{3} + 4x - 3x \dot(x^{2} + 4)}{x^{2} + 4}$
 
 $lim_{x\to +\infty} \frac{-8x}{x^{2} + 4} = 0$
+
+## Exercícios 📝
+
+Alguns exercicios terão a resolução aqui e outros deversão ser resolvidos por conta própria.
+
+1. Dada a produção diária de um funcionario definida por $m(x) = \frac{16x-13}{2x+1}$. Determine a produção máxima diária.
+
+$lim_{x\to +\infty} \frac{16x-13}{2x+1}$
+
+Dividindo o numerador e o denominador por $x$:
+
+$lim_{x\to +\infty} \frac{16 - \frac{13}{x}}{2 + \frac{1}{x}}$
+
+Pela propriedade dos limites ao infinito tem-se que $\frac{13}{x}$ e $\frac{1}{x}$ tendem a $0$ quando $x$ tende a $+\infty$.
+
+Logo: $lim_{x\to +\infty} \frac{16 - \frac{13}{x}}{2 + \frac{1}{x}} = \frac{16}{2} = 8$
+
+2. Dada a produção de uma peça definida por:
+
+$p(x) = \frac{x^{2} + 2x - 15}{2x - 6}$. Determine a produção para 3kg.
+
+$p(3) = \frac{3^{2} + 2 \cdot 3 - 15}{2 \cdot 3 - 6} = \frac{9 + 6 - 15}{6 - 6} = \frac{0}{0}$
+
+Deve ser feita a fatoração do numerador e do denominador:
+
+$p(x) = \frac{(x + 5)(x - 3)}{2(x - 3)}$
+
+$p(x) = \frac{x + 5}{2}$
+
+$p(3) = \frac{3 + 5}{2} = 4$
+
+3. A expressão para a criação de colehos em uma fazenda é definida por
+
+$N(t) = 3000 + \frac{2500t}{10t+25}$. Determine o numero máximo de coelhos:
+
+$lim_{t\to +\infty} 3000 + \frac{2500t}{10t+25}$
+
+Dividindo o numerador e o denominador por $t$:
+
+$lim_{t\to +\infty} 3000 + \frac{2500}{10 + \frac{25}{t}}$
+
+Pela propriedade dos limites ao infinito tem-se que $\frac{25}{t}$ tende a $0$ quando $t$ tende a $+\infty$.
+
+Logo: $lim_{t\to +\infty} 3000 + \frac{2500}{10 + \frac{25}{t}} = 3000 + \frac{2500}{10} = 3000 + 250 = 3250$
+
+4. Dado $f(x) = 2x+1$ Estudar $lim_{x\to 2} f(x)$
+
+Para $ x > 2$:
+
+$lim_{x\to 2^{+}} f(x) = lim_{x\to 2^{+}} 2x+1 = 2 \cdot 2 + 1 = 5$
+
+Para $ x < 2$:
+
+$lim_{x\to 2^{-}} f(x) = lim_{x\to 2^{-}} 2x+1 = 2 \cdot 2 + 1 = 5$
+
+O limite existe. A função é contínua?
+
+$lim_{x\to 2} f(x) = f(2) = 2 \cdot 2 + 1 = 5$
+
+Logo a função é contínua.
+
+5. Estude $f(x)$Anterior através da definição formal de limite.
+
+$lim_{x\to 2} f(x) = 5$
+
+Para todo $\epsilon > 0$, existe um $\delta > 0$ tal que se $0 < |x - 2| < \delta$, então $|f(x) - 5| < \epsilon$
+
+$|f(x) - 5| = |2x + 1 - 5| = |2x - 4| = 2|x - 2|$
+
+$2|x - 2| < \epsilon$
+
+$|x - 2| < \frac{\epsilon}{2}$
+
+Logo
+
+$\delta = \frac{\epsilon}{2}$
+
+6. Calcular $f(x)$, sendo:
+
+$f(x) = x+2$, se $x > 2$
+
+$f(x) = x^{2}$, se $x < 2$
+
+$lim_{x\to 2^{+}} f(x) = lim_{x\to 2^{+}} x+2 = 2 + 2 = 4$
+
+$lim_{x\to 2^{-}} f(x) = lim_{x\to 2^{-}} x^{2} = 2^{2} = 4$
+
+O limite existe.
+
+7. Dado $f(x) = 2x+1, x \in R$ Determine $\delta >0$ tal que:
+
+$|f(x) - 3 | < 0,001$, sempre que $| x - 1| < \delta$
+
+$|f(x) - 3 | = |2x + 1 - 3| = |2x - 2| = 2|x - 1|$
+
+$2|x - 1| < 0,001$
+
+$|x - 1| < \frac{0,001}{2}$
+
+$\delta = \frac{0,001}{2}$
+
+8. Dado $f(x) = 1 - 4x, x \in R$, determinar intervalo em que x deve pertencer e um numero $\delta > 0$ em função de $\epsilon > 0$ tal que:
+
+$|f(x) + 3 | < \epsilon$
+
+$|f(x) + 3 | = |1 - 4x + 3| = |-4x + 4| = 4|x - 1|$
+
+$4|x - 1| < \epsilon$
+
+$|x - 1| < \frac{\epsilon}{4}$
+
+$\delta = \frac{\epsilon}{4}$
+
+9. Calcule demonstrando a propriedade:
+
+$lim_{x\to 1} x^{2} + 5x +3$
+
+$lim_{x\to 3} (x-2)^{13}$
+
+$lim_{x\to \pi} x \dot cos(x)$
+
+$lim_{x\to 2} \frac{x^{2} - 4}{x-2}$
+
+$lim_{x\to 2} \frac{x^{2} - 4}{x^{2} - 2x}$
+
+$lim_{x\to 2} \frac{x^{2} - 4}{x^{2} - 2x + 1}$
+
+10. $lim_{x\to 0} \frac{sen(3x)}{x}$
+
+11. $lim_{x\to 0} \frac{sen(2x)}{5x}$
+
+$lim_{x\to 0} \frac{sen(2x)}{5x} = \frac{1}{5} \cdot lim_{x\to 0} \frac{sen(2x)}{2x}$
+
+$\frac{1}{5} \cdot lim_{x\to 0} \frac{2\cdot sen(2x)}{2\cdot x}$
+
+$\frac{1}{5} \cdot 2 \cdot lim_{x\to 0} \frac{sen(2x)}{2x}$
+
+$\frac{2}{5} \cdot 1 = \frac{2}{5}$
+
+12. $lim_{x\to 0} \frac{sen(3x)}{sen(4x)}$
+
+Multiplicando o numerador por $\frac{3}{3x}$ e o denominador por $\frac{4}{4x}$:
+
+$lim_{x\to 0} \frac{3 \cdot sen(3x)}{3x} \cdot \frac{4x}{4 \cdot sen(4x)}$
+
+$lim_{x\to 0} \frac{3 \cdot sen(3x)}{3x} \cdot \frac{4x}{4 \cdot sen(4x)} = \frac{3}{4}$
+
+13. $lim_{x\to 0} \frac{tg(x)}{x}$
+
+14. $lim_{x\to 0} \frac{1 - cos(x)}{x^{2}}$
+
+15. $lim_{x\to 0} \frac{sen(x)}{5\sqrt{x}}$
+
+16. $lim_{x\to +\infty} (1+\frac{1}{x})^{x}$
+
+17. $lim_{x\to +\infty} (1+\frac{1}{x})^{5x}$
+
+18. $lim_{x\to +\infty} (1+\frac{-3}{x})^{x^{x}}$
+
+Considere $t$ = $\frac{-3}{x}$, então $x$ = $\frac{-3}{t}$
+
+$lim_{x\to +\infty} (1+\frac{-3}{x})^{x^{x}} = lim_{t\to 0^{-}} (1+t)^{\frac{-3}{t}} = \frac{1}{e^{3}}$
+
+19. $lim_{x\to +\infty} (1+\frac{1}{x})^{x+2}$
+
+20. $lim_{x\to +\infty} (1+\frac{1}{x})^{x^{2}}$
+
+21. $lim_{x\to 0} \frac{2^{3x} - 1}{x}$
+
+$lim_{x\to 0} \frac{2^{3x} - 1}{x} = lim_{x\to 0} \frac{2^{3x} - 1}{3x} \cdot 3 = 3 \cdot ln(2)$
+
+22. $lim_{x\to 0} \frac{3^{x} - 1}{x}$
+
+$lim_{x\to 0} \frac{3^{x} - 1}{x} = lim_{x\to 0} \frac{3^{x} - 1}{x} \cdot ln(3) = ln(3)$
+
+23. $lim_{x\to 0} \frac{ln(1+x)} {x}$
+
+$lim_{x\to 0} \frac{ln(1+x)} {x} = lim_{x\to 0} \frac{ln(1+x)} {x} \cdot ln(e) = ln(e) = 1$
+
+24. Ache as assintotas horizontais, verticais e inclinadas de $f(x)$ se existir:
+
+a) $f(x) = \frac{2x-5}{x - 3}$
+
+b) $f(x) = \frac{x^{2} - 4}{x^{2} - 2x}$
+
+c) $f(x) = \frac{x^{2} - 4}{x^{2} - 2x + 1}$
+
+d) $f(x) = \frac{x^{2} - 4}{x^{2} - 2x + 2}$
