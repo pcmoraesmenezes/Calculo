@@ -9,3 +9,5 @@ A ideia é aprimorar os conhecimentos da matemática por trás dos algortimos de
 ## Conteúdo 📚
 
 - [Limites](/Limites.md)
+
+- [Explicação do Modelo de Regressão Linear](/Explicação%20de%20Modelos/Regressão%20Linear.md)
